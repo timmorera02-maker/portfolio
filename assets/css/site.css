@@ -376,14 +376,16 @@ a { color:inherit; }
 
 @media (max-width:760px){
   .pcard { grid-template-columns:1fr; min-height:0; }
-  .pcard--flip .pcard-text { order:2; }
-  .pcard--flip .pcard-media { order:1; }
-  .pcard-media { aspect-ratio:16/10; }
-  .pcard h3, .pcard-outcome { max-width:none; }
+  /* phone: just the photo with the title under it; the whole card opens the project */
+  .pcard-text { order:2; padding:var(--s-4) var(--s-5) var(--s-5); }
+  .pcard-media { order:1; width:100%; aspect-ratio:16/10; }   /* explicit width: the absolutely placed image gives the block no size of its own */
+  .pcard h3 { max-width:none; font-size:1.5rem; }
+  .pcard-outcome, .pcard .btn { display:none; }
+  .pcard-status { margin-top:var(--s-3); }
   /* stacked: artwork drops back into its own block, cropped to the product
-     side and faded into the card colour where it meets the text */
+     side and faded into the card colour where it meets the title */
   .pcard--art .pcard-media { position:relative; }
-  .pcard--art .pcard-media img { object-position:center; -webkit-mask-image:linear-gradient(to bottom, transparent, #000 6%); mask-image:linear-gradient(to bottom, transparent, #000 6%); }
+  .pcard--art .pcard-media img,
   .pcard--art.pcard--flip .pcard-media img { object-position:center; -webkit-mask-image:linear-gradient(to top, transparent, #000 6%); mask-image:linear-gradient(to top, transparent, #000 6%); }
 }
 
