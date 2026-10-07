@@ -1,0 +1,9 @@
+# Raw source material, not part of the site
+/_inbox/
+
+# Local build scripts and CV sources
+/tools/
+
+# Tooling output
+.playwright-mcp/
+__pycache__/

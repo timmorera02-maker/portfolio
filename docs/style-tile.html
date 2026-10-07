@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Style tile — Tim Morera portfolio v2</title>
+<link rel="stylesheet" href="../assets/css/site.css" />
+<style>
+  /* Style-tile-only scaffolding. Not part of the site. */
+  .tile-head { padding-block: var(--s-8) var(--s-6); border-bottom: 1px solid var(--line); }
+  .tile-sec { padding-block: var(--s-8); border-bottom: 1px solid var(--line); }
+  .tile-sec > h2 {
+    font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 400;
+    color: var(--muted); letter-spacing: .08em; margin-bottom: var(--s-6);
+  }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px,1fr)); gap: var(--s-3); }
+  .sw { border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--line); }
+  .sw-chip { height: 76px; }
+  .sw-label { padding: var(--s-3); font-family: var(--font-mono); font-size: var(--text-xs); color: var(--muted); }
+  .sw-label b { display: block; color: var(--ink); font-weight: 500; margin-bottom: 2px; }
+  .row { display: flex; flex-wrap: wrap; gap: var(--s-3); align-items: center; }
+  .type-row { display: grid; grid-template-columns: 8rem 1fr; gap: var(--s-5); align-items: baseline; padding-block: var(--s-4); border-top: 1px dashed var(--line); }
+  .type-row:first-of-type { border-top: 0; }
+  .type-key { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--muted); }
+  .note { font-size: var(--text-sm); color: var(--muted); margin-top: var(--s-4); max-width: 60ch; }
+</style>
+</head>
+<body class="no-js">
+
+<div class="container">
+
+  <header class="tile-head">
+    <span class="eyebrow">Style tile · not a page of the site</span>
+    <h1 style="font-size:var(--text-xl);margin-top:var(--s-4)">Portfolio v2 — design direction</h1>
+    <p class="lead" style="margin-top:var(--s-4)">
+      Light and warm, following arsene.design. Every component the real site needs, shown
+      once. If something here is wrong, it is far cheaper to change now than after five
+      pages are built on it.
+    </p>
+  </header>
+
+  <!-- COLOUR -->
+  <section class="tile-sec">
+    <h2>01 — Colour</h2>
+    <div class="swatches">
+      <div class="sw"><div class="sw-chip" style="background:var(--bg)"></div><div class="sw-label"><b>Page</b>#fffefc</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--surface)"></div><div class="sw-label"><b>Surface</b>#f4f2ee</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--surface-2)"></div><div class="sw-label"><b>Surface 2</b>#ebe8e2</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--line-2)"></div><div class="sw-label"><b>Line</b>#d3cec3</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--muted)"></div><div class="sw-label"><b>Muted</b>#8c877e</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--body)"></div><div class="sw-label"><b>Body</b>#4d4a45</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--ink)"></div><div class="sw-label"><b>Ink</b>#14130f</div></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--accent)"></div><div class="sw-label"><b>Accent</b>#f16a00</div></div>
+    </div>
+    <p class="note">
+      Warmer than the reference on purpose. Your work is oak, epoxy, powder-coated steel —
+      a cool grey ground makes all of it look colder than it is. Orange is the only colour
+      that ever appears; it is used sparingly, and never behind body text.
+    </p>
+  </section>
+
+  <!-- TYPE -->
+  <section class="tile-sec">
+    <h2>02 — Type · General Sans + Fragment Mono, both self-hosted</h2>
+
+    <div class="type-row">
+      <span class="type-key">display / 3xl</span>
+      <span style="font-size:var(--text-3xl);font-weight:600;letter-spacing:-.04em;line-height:1.05;color:var(--ink)">Designing things<br>people actually use</span>
+    </div>
+    <div class="type-row">
+      <span class="type-key">project / 2xl</span>
+      <span style="font-size:var(--text-2xl);font-weight:600;letter-spacing:-.035em;color:var(--ink)">Mobile Medical Unit</span>
+    </div>
+    <div class="type-row">
+      <span class="type-key">section / xl</span>
+      <span style="font-size:var(--text-xl);font-weight:600;color:var(--ink)">Selected projects</span>
+    </div>
+    <div class="type-row">
+      <span class="type-key">lead / md</span>
+      <span class="lead">A bike-based unit that brings basic medical care to people who cannot reach a clinic.</span>
+    </div>
+    <div class="type-row">
+      <span class="type-key">body / base</span>
+      <span style="max-width:60ch">Body copy sits at 17px on a 1.65 line height. Long enough to read comfortably on a laptop, short enough per line that a hiring manager skimming on a phone does not lose their place. This is the size almost everything on the site is set in.</span>
+    </div>
+    <div class="type-row">
+      <span class="type-key">mono / label</span>
+      <span class="meta">10 weeks · SolidWorks · 3 prototypes</span>
+    </div>
+    <div class="type-row">
+      <span class="type-key">eyebrow</span>
+      <span class="eyebrow">Selected work</span>
+    </div>
+    <p class="note">
+      Sentence case everywhere, following the reference. No all-caps headings. The mono is
+      used only for labels, dates and facts — it makes specifications read as specifications.
+    </p>
+  </section>
+
+  <!-- CONTROLS -->
+  <section class="tile-sec">
+    <h2>03 — Buttons, tags, pills</h2>
+    <div class="row">
+      <a class="btn btn--solid" href="#0">View projects <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="btn btn--accent" href="#0">Get in touch <span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="btn" href="#0">Download CV <span aria-hidden="true">↓</span></a>
+      <a class="btn btn--sm" href="#0">Small</a>
+      <a class="link" href="#0">A text link <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+    <div class="row" style="margin-top:var(--s-6)">
+      <span class="pill"><span class="dot" aria-hidden="true"></span> Looking for a graduation internship</span>
+    </div>
+    <div class="tags" style="margin-top:var(--s-6)">
+      <span class="tag">SolidWorks</span><span class="tag">3D printing</span><span class="tag">Vizcom</span>
+      <span class="tag">Laser cutting</span><span class="tag">Prototyping</span><span class="tag">Keyshot</span>
+    </div>
+  </section>
+
+  <!-- PROJECT ROW -->
+  <section class="tile-sec">
+    <h2>04 — Project row · the main unit of the site</h2>
+    <div class="projects">
+      <article class="project">
+        <div class="project-media">
+          <img src="../assets/img/mobile-medical-unit/hero.jpg" alt="Mobile medical unit — green electric cargo bike carrying the care module." loading="lazy" />
+        </div>
+        <div>
+          <span class="project-index">01 — Social impact</span>
+          <h3><a href="#0">Mobile Medical Unit</a></h3>
+          <p class="project-outcome">
+            A cargo-bike unit that folds open into a clean care station, so a nurse can
+            treat someone properly on a pavement.
+          </p>
+          <div class="project-facts">
+            <span>10 weeks</span><span>SolidWorks</span><span>Laser-cut prototype</span>
+          </div>
+          <span class="project-more">Read the case study <span class="arrow" aria-hidden="true">→</span></span>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-media">
+          <img src="../assets/img/epoxy-tray/hero.jpg" alt="Epoxy resin and burl-wood serving tray with a green resin river." loading="lazy" />
+        </div>
+        <div>
+          <span class="project-index">02 — Craft &amp; materials</span>
+          <h3><a href="#0">Epoxy Serving Tray</a></h3>
+          <p class="project-outcome">
+            Learning a material by fighting it — three pours, two failures, and a finish
+            that finally held.
+          </p>
+          <div class="project-facts">
+            <span>Self-directed</span><span>Burl oak</span><span>Epoxy resin</span>
+          </div>
+          <span class="project-more">Read the case study <span class="arrow" aria-hidden="true">→</span></span>
+        </div>
+      </article>
+    </div>
+    <p class="note">
+      Rows alternate left/right. The image is given real room — this is the main change from
+      the reference, which is text-forward because its author designs interfaces. Yours are
+      objects and they photograph well. The whole row is one click target.
+    </p>
+  </section>
+
+  <!-- EXPLORATIONS -->
+  <section class="tile-sec">
+    <h2>05 — Explorations · small things, many of them</h2>
+    <div class="expl-grid">
+      <figure class="expl">
+        <img src="../assets/img/mobile-medical-unit/prototype.jpg" alt="Laser-cut plywood prototype." loading="lazy" />
+        <figcaption>Laser-cut plywood test frame</figcaption>
+      </figure>
+      <figure class="expl">
+        <img src="../assets/img/powertool/detail-01.jpg" alt="Powertool CAD detail." loading="lazy" />
+        <figcaption>Grip section study, SolidWorks</figcaption>
+      </figure>
+      <figure class="expl">
+        <img src="../assets/img/lounge-bench/detail-01.jpg" alt="Lounge bench detail." loading="lazy" />
+        <figcaption>Bench slat spacing mock-up</figcaption>
+      </figure>
+      <div class="expl expl--empty">Your photo<br>goes here</div>
+      <div class="expl expl--empty">Your photo<br>goes here</div>
+    </div>
+    <p class="note">
+      Square, dense, captions on hover, click to enlarge. Placeholders show how it reads
+      while half-empty. This section is the reason to go digging through your phone — it is
+      the fastest proof that you make things constantly.
+    </p>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="tile-sec">
+    <h2>06 — Experience</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-when">2025 — 2026</span>
+        <div>
+          <h3 class="tl-role">R&amp;D Intern <span class="tl-org">· Streetlife</span></h3>
+          <p class="tl-desc">Placeholder — this gets rewritten from what you tell me you actually worked on.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-when">2022 — present</span>
+        <div>
+          <h3 class="tl-role">Industrial Product Design <span class="tl-org">· Hogeschool Rotterdam</span></h3>
+          <p class="tl-desc">Product development, CAD, 3D printing, prototyping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="tile-sec" style="border-bottom:0">
+    <h2>07 — Form fields</h2>
+    <form class="form" style="max-width:420px" onsubmit="return false">
+      <div class="field"><label for="t-n">Name</label><input id="t-n" type="text" /></div>
+      <div class="field"><label for="t-e">Email</label><input id="t-e" type="email" /></div>
+      <div class="field"><label for="t-m">Message</label><textarea id="t-m" placeholder="Tell me about the role…"></textarea></div>
+      <div><button class="btn btn--solid" type="submit">Send message <span class="arrow" aria-hidden="true">↗</span></button></div>
+    </form>
+  </section>
+
+</div>
+</body>
+</html>
