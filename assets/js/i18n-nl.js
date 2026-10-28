@@ -382,7 +382,7 @@ window.I18N_NL = {
     "Render of the rolling case opened on its folding stand": "Render van de rolkoffer, geopend op zijn uitklapbare onderstel",
     "Cordless power tool in black and grey with gold accents": "Accuboor in zwart en grijs met gouden accenten",
     "The power tool seen from the side, standing on its battery foot": "De accuboor van opzij gezien, staand op de accuvoet",
-    "Three pencil sketches of the tool, from a rough outline to the final line drawing": "Drie potloodschetsen van de boor, van een ruwe omtrek tot de definitieve lijntekening",
+    "Six sketches of the drill, from rough pencil outlines to finished line drawings": "Zes schetsen van de boor, van ruwe potloodomtrekken tot uitgewerkte lijntekeningen",
     "White foam model of the tool held in a hand": "Wit schuimmodel van de boor in een hand",
     "Coloured block diagram of the motor, gearbox, chuck, handle, trigger and battery": "Gekleurd blokschema van de motor, de tandwielkast, de boorkop, de handgreep, de trekker en de accu",
     "Bus shelter with an aluminium frame, glass back, roof and side panels, with someone sitting on the seat between the two middle posts": "Bushokje met een aluminium frame, glazen achterwand, dak en zijpanelen, met iemand op de zitting tussen de twee middelste staanders",
