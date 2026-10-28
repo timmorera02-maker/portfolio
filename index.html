@@ -347,7 +347,9 @@
             </div>
           </div>
 
-          <form class="form" action="mailto:timmorera02@gmail.com" method="post" enctype="text/plain">
+          <!-- No mailto: action: Chrome flags such forms as "not fully secure".
+               site.js opens the mail app with the message filled in instead. -->
+          <form class="form" data-mailto="timmorera02@gmail.com">
             <div class="field">
               <label for="cf-name">Name</label>
               <input id="cf-name" name="name" type="text" autocomplete="name" required />
@@ -468,6 +470,6 @@
 </div>
 
 <script src="assets/js/i18n-nl.js?v=20261007l"></script>
-<script src="assets/js/site.js?v=20261007l"></script>
+<script src="assets/js/site.js?v=20261028a"></script>
 </body>
 </html>

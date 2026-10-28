@@ -68,6 +68,22 @@
     });
   });
 
+  /* ---- Contact form: open the mail app with the message filled in -------
+     A form with action="mailto:" makes Chrome mark the page "not fully
+     secure", so the form has no action and we build the mailto link here. */
+  var contactForm = document.querySelector('form[data-mailto]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = contactForm.elements;
+      var subject = 'Portfolio contact: ' + f.name.value;
+      var body = f.message.value + '\n\n' + f.name.value + '\n' + f.email.value;
+      window.location.href = 'mailto:' + contactForm.getAttribute('data-mailto') +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+    });
+  }
+
   /* ---- Year ------------------------------------------------------------ */
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
